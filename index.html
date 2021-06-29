@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            {{ message }}
+        </div>
+
+        <div>
+            <img src="Images\Clock.png">
+        </div>
+
+        
+        <div>
+            <p>
+                Voer uw uren hier in
+            </p>
+            <input type="number" id="numberDays" v-model="uren" placeholder="Voer uren hier in">
+            <button class= "converterButton" onclick="hourToDay()">converteer</button>
+            <p id="hours">
+            Hier zijn de uren in dagen: 
+            </p>
+            <br>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
